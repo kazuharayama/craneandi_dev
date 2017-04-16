@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+.RecruitPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $color-red;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    &__head {
+        color: $color-white;
+        font-size: 26px;
+        border: solid 1px $color-white;
+        border-radius: 10px;
+        margin-top: 40px;
+        padding: 10px 30px 10px 30px;
+        p {
+            margin: 0;
+        }
+        @include mq-sp {
+            font-size: 38px;
+            margin-top: 60px;
+        }
+    }
+    &__main {
+        display: flex;
+        flex-direction: row;
+        @include mq-sp {
+            margin-top: 20px;
+        }
+    }
+    &__body {
+        width: 430px;
+        background: $color-white;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+        border-radius: 10px 0 0 10px;
+        border-right: solid 5px $color-red;
+        &:nth-child(2n) {
+            border-radius: 0 10px 10px 0;
+            border-right: none;
+        }
+        &:hover {
+            color: $color-red;
+        }
+        p {
+            font-size: 24px;
+            margin: 0;
+        }
+        @include mq-sp {
+            width: 410px;
+            p {
+                font-size: 38px;
+            }
+        }
+    }
+}

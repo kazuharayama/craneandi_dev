@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.ContentsPanel {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    &__main1 {
+        flex: 0 0 470px;
+        width: 470px;
+        height: 290px;
+        background-image: url("../images/contents1.jpg");
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          opacity: 0.8;
+        }
+    }
+    &__main2 {
+        flex: 0 0 470px;
+        width: 470px;
+        height: 290px;
+        background-image: url("../images/contents2.jpg");
+        margin-bottom: 20px;
+        border-radius: 10px;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          opacity: 0.8;
+        }
+    }
+    &__main3 {
+        flex: 0 0 470px;
+        width: 470px;
+        height: 290px;
+        background-image: url("../images/contents3.jpg");
+        margin-right: 20px;
+        border-radius: 10px;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          opacity: 0.8;
+        }
+    }
+    &__main4 {
+        flex: 0 0 470px;
+        width: 470px;
+        height: 290px;
+        background-image: url("../images/contents4.jpg");
+        border-radius: 10px;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          opacity: 0.8;
+        }
+    }
+    &__head {
+        font-size: 24px;
+        color: $color-white;
+        background-color: rgba(51,51,51,0.6);
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        @include mq-sp {
+          font-size: 38px;
+        }
+    }
+}

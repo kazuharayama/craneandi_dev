@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+.TopHeader {
+  position: relative;
+  height: 890px;
+  overflow: hidden;
+  @include mq-sp {
+    height: 940px;
+  }
+  &__main {
+    width: $base-content-width;
+    height: 632px;
+    background-image: url("../images/top-image.jpg");
+  }
+  &__menu {
+    padding-top: 5px;
+  }
+  &__menu2 {
+    position: absolute;
+    top: 0;
+    left: 825px;
+    background: $color-red;
+    border-radius: 0 0 10px 10px;
+    padding: 10px 20px;
+    text-align: center;
+    color: $color-white;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.8;
+    }
+    @include mq-sp {
+      font-size: 24px;
+      left: 755px;
+      padding: 30px 30px 10px 30px;
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  &__head {
+    position: relative;
+    top: 445px;
+    left: 190px;
+    color: $color-white;
+    transform: rotate(-4deg);
+    font-size: 24px;
+    @include mq-sp {
+      font-size: 28px;
+      top: 487px;
+      left: 160px;
+      z-index: 99;
+    }
+  }
+  &__title {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 225px;
+    background: $color-grey;
+    color: $color-white;
+    font-size: 24px;
+    position: relative;
+    top: -40px;
+    left: -20px;
+    transform: rotate(-4deg);
+    width: 1100px;
+    z-index: 2;
+    p {
+      margin: 0;
+    }
+    @include mq-sp {
+      font-size: 30px;
+      padding-left: 190px;
+    }
+  }
+  &__boby {
+    background: $color-red;
+    height: 260px;
+    font-size: 18px;
+    line-height: 2em;
+    color: $color-white;
+    padding-top: 50px;
+    position: absolute;
+    top: 629px;
+    z-index: 1;
+    p {
+      padding-left: 330px;
+      padding-right: 30px;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+    @include mq-sp {
+      height: 300px;
+      padding-top: 55px;
+      font-size: 24px;
+      line-height: 1.6em;
+    }
+  }
+  &__sub {
+    position: absolute;
+    top: 710px;
+    left: 150px;
+    z-index: 5;
+    background: $color-white;
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    &__1 {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+    &__2 {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    @include mq-sp {
+      width: 170px;
+      height: 170px;
+      font-size: 24px;
+      top: 725px;
+      left: 130px;
+      &__1 {
+        margin-top: 30px;
+      }
+    }
+  }
+  &__img {
+    width: 230px;
+    height: 365px;
+    position: absolute;
+    top: 524px;
+    z-index: 4;
+    background-image: url("../images/daihyo.png");
+    @include mq-sp {
+      top: 564px;
+    }
+  }
+}

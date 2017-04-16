@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.Recruit {
+    display: flex;
+    flex-wrap: wrap;
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    &__head {
+        display: flex;
+        flex: 1 0 195px;
+        align-self: stretch;
+        align-items: center;
+        background: $color-red;
+        padding: 40px 10px 40px 40px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        color: $color-white;
+        border-radius: 5px;
+        @include mq-sp {
+            flex: 1 0 250px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 34px;
+        }
+    }
+    &__body {
+        display: flex;
+        flex: 1 0 760px;
+        flex-direction: column;
+        background: $color-beige;
+        padding: 40px 40px 40px 40px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        ul {
+            margin: 0;
+        }
+        p:nth-of-type(2) {
+            margin-top: 0;
+        }
+        @include mq-sp {
+            flex: 1 0 700px;
+            margin-bottom: 10px;
+            font-size: 34px;
+        }
+    }
+    &__flow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.holiday {
+    padding-left: 0;
+}
+.flow {
+    padding-left: 0;
+    text-align: center;
+    li {
+        background: $color-white;
+        border: solid 1px $color-red-pale;
+        border-radius: 5px;
+        padding: 20px 20px;
+        &:nth-child(2n) {
+            border: none;
+            background: none;
+        }
+    }
+}

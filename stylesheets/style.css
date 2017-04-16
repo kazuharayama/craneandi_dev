@@ -1,0 +1,2246 @@
+/*
+  Theme Name:
+  Description: Crane&i
+  Author: Crane&i
+  Author URI:
+  Version: 1.0
+*/
+/*! sanitize.css v4.1.0 | CC0 License | github.com/jonathantneal/sanitize.css */
+/* Elements of HTML (https://html.spec.whatwg.org/multipage/semantics.html#semantics)
+   ========================================================================== */
+/**
+ * 1. Remove repeating backgrounds in all browsers (opinionated).
+ * 2. Add box sizing inheritence in all browsers (opinionated).
+ */
+/* line 11, ../sass/base/lib/_sanitize.scss */
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  /* 1 */
+  box-sizing: inherit;
+  /* 2 */
+}
+
+/**
+ * 1. Add text decoration inheritance in all browsers (opinionated).
+ * 2. Add vertical alignment inheritence in all browsers (opinionated).
+ */
+/* line 23, ../sass/base/lib/_sanitize.scss */
+::before,
+::after {
+  text-decoration: inherit;
+  /* 1 */
+  vertical-align: inherit;
+  /* 2 */
+}
+
+/**
+ * 1. Add border box sizing in all browsers (opinionated).
+ * 2. Add the default cursor in all browsers (opinionated).
+ * 3. Add a flattened line height in all browsers (opinionated).
+ * 4. Prevent font size adjustments after orientation changes in IE and iOS.
+ */
+/* line 36, ../sass/base/lib/_sanitize.scss */
+html {
+  box-sizing: border-box;
+  /* 1 */
+  cursor: default;
+  /* 2 */
+  font-family: sans-serif;
+  /* 3 */
+  line-height: 1.5;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 4 */
+  -webkit-text-size-adjust: 100%;
+  /* 4 */
+}
+
+/* Sections (https://html.spec.whatwg.org/multipage/semantics.html#sections)
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 52, ../sass/base/lib/_sanitize.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 65, ../sass/base/lib/_sanitize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 74, ../sass/base/lib/_sanitize.scss */
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+/* Grouping content (https://html.spec.whatwg.org/multipage/semantics.html#grouping-content)
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 87, ../sass/base/lib/_sanitize.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 97, ../sass/base/lib/_sanitize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 106, ../sass/base/lib/_sanitize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * Remove the list style on navigation lists in all browsers (opinionated).
+ */
+/* line 116, ../sass/base/lib/_sanitize.scss */
+nav ol,
+nav ul {
+  list-style: none;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 126, ../sass/base/lib/_sanitize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics (https://html.spec.whatwg.org/multipage/semantics.html#text-level-semantics)
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 139, ../sass/base/lib/_sanitize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 149, ../sass/base/lib/_sanitize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 159, ../sass/base/lib/_sanitize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 168, ../sass/base/lib/_sanitize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 178, ../sass/base/lib/_sanitize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 189, ../sass/base/lib/_sanitize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 197, ../sass/base/lib/_sanitize.scss */
+mark {
+  background-color: #ffff00;
+  color: #000000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 206, ../sass/base/lib/_sanitize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 215, ../sass/base/lib/_sanitize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 223, ../sass/base/lib/_sanitize.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 227, ../sass/base/lib/_sanitize.scss */
+sup {
+  top: -.5em;
+}
+
+/*
+ * Remove the text shadow on text selections (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ */
+/* line 236, ../sass/base/lib/_sanitize.scss */
+::-moz-selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
+
+/* line 242, ../sass/base/lib/_sanitize.scss */
+::selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
+
+/* Embedded content (https://html.spec.whatwg.org/multipage/embedded-content.html#embedded-content)
+   ========================================================================== */
+/*
+ * Change the alignment on media elements in all browers (opinionated).
+ */
+/* line 255, ../sass/base/lib/_sanitize.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 268, ../sass/base/lib/_sanitize.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 277, ../sass/base/lib/_sanitize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 286, ../sass/base/lib/_sanitize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Change the fill color to match the text color in all browsers (opinionated).
+ */
+/* line 294, ../sass/base/lib/_sanitize.scss */
+svg {
+  fill: currentColor;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 302, ../sass/base/lib/_sanitize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Tabular data (https://html.spec.whatwg.org/multipage/tables.html#tables)
+   ========================================================================== */
+/* line 309, ../sass/base/lib/_sanitize.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* Forms (https://html.spec.whatwg.org/multipage/forms.html#forms)
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+/* line 320, ../sass/base/lib/_sanitize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+ * Remove the default styling in all browsers (opinionated).
+ */
+/* line 332, ../sass/base/lib/_sanitize.scss */
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 347, ../sass/base/lib/_sanitize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 357, ../sass/base/lib/_sanitize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 368, ../sass/base/lib/_sanitize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 379, ../sass/base/lib/_sanitize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 391, ../sass/base/lib/_sanitize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 405, ../sass/base/lib/_sanitize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 419, ../sass/base/lib/_sanitize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the default vertical scrollbar in IE.
+ * 2. Change the resize direction on textareas in all browsers (opinionated).
+ */
+/* line 429, ../sass/base/lib/_sanitize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  resize: vertical;
+  /* 2 */
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 439, ../sass/base/lib/_sanitize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 449, ../sass/base/lib/_sanitize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 459, ../sass/base/lib/_sanitize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 468, ../sass/base/lib/_sanitize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 478, ../sass/base/lib/_sanitize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive elements (https://html.spec.whatwg.org/multipage/forms.html#interactive-elements)
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 491, ../sass/base/lib/_sanitize.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 500, ../sass/base/lib/_sanitize.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting (https://html.spec.whatwg.org/multipage/scripting.html#scripting-3)
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 511, ../sass/base/lib/_sanitize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 519, ../sass/base/lib/_sanitize.scss */
+template {
+  display: none;
+}
+
+/* User interaction (https://html.spec.whatwg.org/multipage/interaction.html#editing)
+   ========================================================================== */
+/*
+ * Remove the tapping delay on clickable elements (opinionated).
+ * 1. Remove the tapping delay in IE 10.
+ */
+/* line 531, ../sass/base/lib/_sanitize.scss */
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  /* 1 */
+  touch-action: manipulation;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 548, ../sass/base/lib/_sanitize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ARIA in HTML (https://w3c.github.io/html-aria/)
+   ========================================================================== */
+/**
+ * Change the cursor on busy elements (opinionated).
+ */
+/* line 559, ../sass/base/lib/_sanitize.scss */
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+/*
+ * Change the cursor on control elements (opinionated).
+ */
+/* line 567, ../sass/base/lib/_sanitize.scss */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/*
+ * Change the display on visually hidden accessible elements (opinionated).
+ */
+/* line 575, ../sass/base/lib/_sanitize.scss */
+[aria-hidden="false"][hidden] {
+  clip: rect(0, 0, 0, 0);
+  display: inherit;
+  position: absolute;
+}
+
+/* line 581, ../sass/base/lib/_sanitize.scss */
+[aria-hidden="false"][hidden]:focus {
+  clip: auto;
+}
+
+/*
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements (opinionated).
+ */
+/* line 590, ../sass/base/lib/_sanitize.scss */
+[aria-disabled] {
+  cursor: default;
+}
+
+/* line 7, ../sass/base/_reset.scss */
+:root, html, body {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+}
+
+/* line 12, ../sass/base/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/base/_reset.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 18, ../sass/base/_reset.scss */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 22, ../sass/base/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 3, ../sass/components/_topHeader.scss */
+.TopHeader {
+  position: relative;
+  height: 890px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 640px) {
+  /* line 3, ../sass/components/_topHeader.scss */
+  .TopHeader {
+    height: 940px;
+  }
+}
+/* line 10, ../sass/components/_topHeader.scss */
+.TopHeader__main {
+  width: 980px;
+  height: 632px;
+  background-image: url("../images/top-image.jpg");
+}
+/* line 15, ../sass/components/_topHeader.scss */
+.TopHeader__menu {
+  padding-top: 5px;
+}
+/* line 18, ../sass/components/_topHeader.scss */
+.TopHeader__menu2 {
+  position: absolute;
+  top: 0;
+  left: 825px;
+  background: #AF0000;
+  border-radius: 0 0 10px 10px;
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+}
+/* line 27, ../sass/components/_topHeader.scss */
+.TopHeader__menu2:hover {
+  opacity: 0.8;
+}
+/* line 30, ../sass/components/_topHeader.scss */
+.TopHeader__menu2:active {
+  opacity: 0.8;
+}
+@media only screen and (max-width: 640px) {
+  /* line 18, ../sass/components/_topHeader.scss */
+  .TopHeader__menu2 {
+    font-size: 24px;
+    left: 755px;
+    padding: 30px 30px 10px 30px;
+  }
+  /* line 37, ../sass/components/_topHeader.scss */
+  .TopHeader__menu2 img {
+    width: 70px;
+    height: 70px;
+  }
+}
+/* line 43, ../sass/components/_topHeader.scss */
+.TopHeader__head {
+  position: relative;
+  top: 445px;
+  left: 190px;
+  color: #fff;
+  transform: rotate(-4deg);
+  font-size: 24px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 43, ../sass/components/_topHeader.scss */
+  .TopHeader__head {
+    font-size: 28px;
+    top: 487px;
+    left: 160px;
+    z-index: 99;
+  }
+}
+/* line 57, ../sass/components/_topHeader.scss */
+.TopHeader__title {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 225px;
+  background: #494949;
+  color: #fff;
+  font-size: 24px;
+  position: relative;
+  top: -40px;
+  left: -20px;
+  transform: rotate(-4deg);
+  width: 1100px;
+  z-index: 2;
+}
+/* line 70, ../sass/components/_topHeader.scss */
+.TopHeader__title p {
+  margin: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 57, ../sass/components/_topHeader.scss */
+  .TopHeader__title {
+    font-size: 30px;
+    padding-left: 190px;
+  }
+}
+/* line 78, ../sass/components/_topHeader.scss */
+.TopHeader__boby {
+  background: #AF0000;
+  height: 260px;
+  font-size: 18px;
+  line-height: 2em;
+  color: #fff;
+  padding-top: 50px;
+  position: absolute;
+  top: 629px;
+  z-index: 1;
+}
+/* line 88, ../sass/components/_topHeader.scss */
+.TopHeader__boby p {
+  padding-left: 330px;
+  padding-right: 30px;
+}
+/* line 92, ../sass/components/_topHeader.scss */
+.TopHeader__boby:hover {
+  opacity: 0.8;
+}
+@media only screen and (max-width: 640px) {
+  /* line 78, ../sass/components/_topHeader.scss */
+  .TopHeader__boby {
+    height: 300px;
+    padding-top: 55px;
+    font-size: 24px;
+    line-height: 1.6em;
+  }
+}
+/* line 102, ../sass/components/_topHeader.scss */
+.TopHeader__sub {
+  position: absolute;
+  top: 710px;
+  left: 150px;
+  z-index: 5;
+  background: #fff;
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+}
+/* line 113, ../sass/components/_topHeader.scss */
+.TopHeader__sub__1 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+/* line 118, ../sass/components/_topHeader.scss */
+.TopHeader__sub__2 {
+  font-weight: bold;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 102, ../sass/components/_topHeader.scss */
+  .TopHeader__sub {
+    width: 170px;
+    height: 170px;
+    font-size: 24px;
+    top: 725px;
+    left: 130px;
+  }
+  /* line 128, ../sass/components/_topHeader.scss */
+  .TopHeader__sub__1 {
+    margin-top: 30px;
+  }
+}
+/* line 133, ../sass/components/_topHeader.scss */
+.TopHeader__img {
+  width: 230px;
+  height: 365px;
+  position: absolute;
+  top: 524px;
+  z-index: 4;
+  background-image: url("../images/daihyo.png");
+}
+@media only screen and (max-width: 640px) {
+  /* line 133, ../sass/components/_topHeader.scss */
+  .TopHeader__img {
+    top: 564px;
+  }
+}
+
+/* line 3, ../sass/components/_interviewPanel.scss */
+.InterviewPanel {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+/* line 7, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__half {
+  width: 470px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+/* line 11, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__half:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 14, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__half:hover {
+  opacity: 0.8;
+}
+/* line 17, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__half:active {
+  opacity: 0.8;
+}
+/* line 20, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__half:nth-child(3n) {
+  margin-bottom: 0;
+}
+/* line 24, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__head {
+  background: #262626;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px 10px 15px 25px;
+}
+/* line 29, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__head p {
+  margin: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 24, ../sass/components/_interviewPanel.scss */
+  .InterviewPanel__head {
+    font-size: 34px;
+    padding: 20px 10px 20px 25px;
+  }
+}
+/* line 37, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__main__1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 470px;
+  align-items: flex-end;
+  background-image: url("../images/interview_thumb01.jpg");
+}
+/* line 44, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__main__2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 470px;
+  align-items: flex-end;
+  background-image: url("../images/interview_thumb02.jpg");
+}
+/* line 51, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__main__3 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 470px;
+  align-items: flex-end;
+  background-image: url("../images/interview_thumb03.jpg");
+}
+/* line 58, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__sub {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 65px;
+  background: #AF0000;
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+}
+/* line 68, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__sub__1 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  color: #fff;
+}
+/* line 73, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__sub__2 {
+  margin-top: 5px;
+  color: #fff;
+}
+@media only screen and (max-width: 640px) {
+  /* line 58, ../sass/components/_interviewPanel.scss */
+  .InterviewPanel__sub {
+    font-size: 24px;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 29px;
+  }
+  /* line 82, ../sass/components/_interviewPanel.scss */
+  .InterviewPanel__sub__1 {
+    margin-top: 30px;
+  }
+}
+/* line 87, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__body {
+  width: 470px;
+  height: 94px;
+  align-self: flex-start;
+  background-color: rgba(15, 15, 15, 0.7);
+  padding: 20px 25px 20px 25px;
+  font-size: 18px;
+  color: #fff;
+}
+/* line 95, ../sass/components/_interviewPanel.scss */
+.InterviewPanel__body p {
+  margin: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 87, ../sass/components/_interviewPanel.scss */
+  .InterviewPanel__body {
+    font-size: 30px;
+    padding: 20px 25px 20px 25px;
+    height: 134px;
+  }
+}
+
+/* line 3, ../sass/components/_recruitPanel.scss */
+.RecruitPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #AF0000;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+/* line 13, ../sass/components/_recruitPanel.scss */
+.RecruitPanel__head {
+  color: #fff;
+  font-size: 26px;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  margin-top: 40px;
+  padding: 10px 30px 10px 30px;
+}
+/* line 20, ../sass/components/_recruitPanel.scss */
+.RecruitPanel__head p {
+  margin: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 13, ../sass/components/_recruitPanel.scss */
+  .RecruitPanel__head {
+    font-size: 38px;
+    margin-top: 60px;
+  }
+}
+/* line 28, ../sass/components/_recruitPanel.scss */
+.RecruitPanel__main {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 640px) {
+  /* line 28, ../sass/components/_recruitPanel.scss */
+  .RecruitPanel__main {
+    margin-top: 20px;
+  }
+}
+/* line 35, ../sass/components/_recruitPanel.scss */
+.RecruitPanel__body {
+  width: 430px;
+  background: #fff;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  border-radius: 10px 0 0 10px;
+  border-right: solid 5px #AF0000;
+}
+/* line 45, ../sass/components/_recruitPanel.scss */
+.RecruitPanel__body:nth-child(2n) {
+  border-radius: 0 10px 10px 0;
+  border-right: none;
+}
+/* line 49, ../sass/components/_recruitPanel.scss */
+.RecruitPanel__body:hover {
+  color: #AF0000;
+}
+/* line 52, ../sass/components/_recruitPanel.scss */
+.RecruitPanel__body p {
+  font-size: 24px;
+  margin: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 35, ../sass/components/_recruitPanel.scss */
+  .RecruitPanel__body {
+    width: 410px;
+  }
+  /* line 58, ../sass/components/_recruitPanel.scss */
+  .RecruitPanel__body p {
+    font-size: 38px;
+  }
+}
+
+/* line 3, ../sass/components/_contentsPanel.scss */
+.ContentsPanel {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 7, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main1 {
+  flex: 0 0 470px;
+  width: 470px;
+  height: 290px;
+  background-image: url("../images/contents1.jpg");
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+/* line 15, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main1:hover {
+  opacity: 0.8;
+}
+/* line 18, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main1:active {
+  opacity: 0.8;
+}
+/* line 22, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main2 {
+  flex: 0 0 470px;
+  width: 470px;
+  height: 290px;
+  background-image: url("../images/contents2.jpg");
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+/* line 29, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main2:hover {
+  opacity: 0.8;
+}
+/* line 32, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main2:active {
+  opacity: 0.8;
+}
+/* line 36, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main3 {
+  flex: 0 0 470px;
+  width: 470px;
+  height: 290px;
+  background-image: url("../images/contents3.jpg");
+  margin-right: 20px;
+  border-radius: 10px;
+}
+/* line 43, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main3:hover {
+  opacity: 0.8;
+}
+/* line 46, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main3:active {
+  opacity: 0.8;
+}
+/* line 50, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main4 {
+  flex: 0 0 470px;
+  width: 470px;
+  height: 290px;
+  background-image: url("../images/contents4.jpg");
+  border-radius: 10px;
+}
+/* line 56, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main4:hover {
+  opacity: 0.8;
+}
+/* line 59, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__main4:active {
+  opacity: 0.8;
+}
+/* line 63, ../sass/components/_contentsPanel.scss */
+.ContentsPanel__head {
+  font-size: 24px;
+  color: #fff;
+  background-color: rgba(51, 51, 51, 0.6);
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+@media only screen and (max-width: 640px) {
+  /* line 63, ../sass/components/_contentsPanel.scss */
+  .ContentsPanel__head {
+    font-size: 38px;
+  }
+}
+
+/* line 3, ../sass/components/_recruit.scss */
+.Recruit {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 6, ../sass/components/_recruit.scss */
+.Recruit__wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+/* line 12, ../sass/components/_recruit.scss */
+.Recruit__head {
+  display: flex;
+  flex: 1 0 195px;
+  align-self: stretch;
+  align-items: center;
+  background: #AF0000;
+  padding: 40px 10px 40px 40px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 12, ../sass/components/_recruit.scss */
+  .Recruit__head {
+    flex: 1 0 250px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 34px;
+  }
+}
+/* line 30, ../sass/components/_recruit.scss */
+.Recruit__body {
+  display: flex;
+  flex: 1 0 760px;
+  flex-direction: column;
+  background: #E2DFD0;
+  padding: 40px 40px 40px 40px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+/* line 38, ../sass/components/_recruit.scss */
+.Recruit__body ul {
+  margin: 0;
+}
+/* line 41, ../sass/components/_recruit.scss */
+.Recruit__body p:nth-of-type(2) {
+  margin-top: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 30, ../sass/components/_recruit.scss */
+  .Recruit__body {
+    flex: 1 0 700px;
+    margin-bottom: 10px;
+    font-size: 34px;
+  }
+}
+/* line 50, ../sass/components/_recruit.scss */
+.Recruit__flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 56, ../sass/components/_recruit.scss */
+.holiday {
+  padding-left: 0;
+}
+
+/* line 59, ../sass/components/_recruit.scss */
+.flow {
+  padding-left: 0;
+  text-align: center;
+}
+/* line 62, ../sass/components/_recruit.scss */
+.flow li {
+  background: #fff;
+  border: solid 1px #EA0000;
+  border-radius: 5px;
+  padding: 20px 20px;
+}
+/* line 67, ../sass/components/_recruit.scss */
+.flow li:nth-child(2n) {
+  border: none;
+  background: none;
+}
+
+/* line 3, ../sass/components/_training.scss */
+.Training {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 7, ../sass/components/_training.scss */
+.Training__head {
+  flex: 0 0 100%;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+/* line 11, ../sass/components/_training.scss */
+.Training__head p {
+  margin-top: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 7, ../sass/components/_training.scss */
+  .Training__head {
+    font-size: 34px;
+  }
+}
+/* line 18, ../sass/components/_training.scss */
+.Training__title {
+  flex: 0 0 95%;
+  background: #AF0000;
+  border-radius: 10px 10px 0 0;
+  padding: 20px 10px;
+  color: #fff;
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+/* line 27, ../sass/components/_training.scss */
+.Training__title h4 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+@media only screen and (max-width: 640px) {
+  /* line 18, ../sass/components/_training.scss */
+  .Training__title {
+    flex: 0 0 90%;
+    padding: 40px 10px;
+  }
+  /* line 35, ../sass/components/_training.scss */
+  .Training__title h4 {
+    font-size: 38px;
+  }
+}
+/* line 40, ../sass/components/_training.scss */
+.Training__body {
+  flex: 0 0 95%;
+  border: solid 1px #AF0000;
+  margin-bottom: 60px;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-radius: 0 0 10px 10px;
+  padding: 0 40px 20px 40px;
+}
+/* line 48, ../sass/components/_training.scss */
+.Training__body h5 {
+  font-size: 18px;
+  color: #AF0000;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 40, ../sass/components/_training.scss */
+  .Training__body {
+    flex: 0 0 90%;
+    padding: 0 60px 20px 60px;
+  }
+  /* line 57, ../sass/components/_training.scss */
+  .Training__body h5 {
+    font-size: 34px;
+  }
+  /* line 60, ../sass/components/_training.scss */
+  .Training__body p {
+    font-size: 34px;
+    margin-top: 10px;
+  }
+  /* line 64, ../sass/components/_training.scss */
+  .Training__body ul {
+    margin-bottom: 40px;
+  }
+  /* line 67, ../sass/components/_training.scss */
+  .Training__body li {
+    font-size: 34px;
+  }
+}
+/* line 72, ../sass/components/_training.scss */
+.Training__img {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+/* line 3, ../sass/components/_faq.scss */
+.Faq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 7, ../sass/components/_faq.scss */
+.Faq__main {
+  flex: 0 0 98%;
+  display: flex;
+  align-items: center;
+  background: #AF0000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin-top: 10px;
+}
+/* line 17, ../sass/components/_faq.scss */
+.Faq__Q {
+  font-size: 22px;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 17, ../sass/components/_faq.scss */
+  .Faq__Q {
+    font-size: 38px;
+  }
+}
+/* line 25, ../sass/components/_faq.scss */
+.Faq__head p {
+  margin: 10px 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 29, ../sass/components/_faq.scss */
+  .Faq__head p {
+    font-size: 34px;
+  }
+}
+/* line 34, ../sass/components/_faq.scss */
+.Faq__sub {
+  flex: 0 0 98%;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+}
+/* line 42, ../sass/components/_faq.scss */
+.Faq__A {
+  margin-top: 10px;
+  font-size: 22px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 640px) {
+  /* line 42, ../sass/components/_faq.scss */
+  .Faq__A {
+    font-size: 38px;
+  }
+}
+/* line 52, ../sass/components/_faq.scss */
+.Faq__body p {
+  margin: 10px 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 56, ../sass/components/_faq.scss */
+  .Faq__body p {
+    font-size: 34px;
+  }
+}
+
+/* line 3, ../sass/components/_benefit.scss */
+.Benefit {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 640px) {
+  /* line 3, ../sass/components/_benefit.scss */
+  .Benefit {
+    justify-content: center;
+  }
+}
+/* line 9, ../sass/components/_benefit.scss */
+.Benefit__main {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 9, ../sass/components/_benefit.scss */
+  .Benefit__main {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+/* line 20, ../sass/components/_benefit.scss */
+.Benefit__main2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 300px;
+  margin-right: 15px;
+}
+/* line 25, ../sass/components/_benefit.scss */
+.Benefit__main2:nth-child(3n) {
+  margin-right: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 20, ../sass/components/_benefit.scss */
+  .Benefit__main2 {
+    flex: 0 0 880px;
+    margin-bottom: 60px;
+  }
+}
+/* line 33, ../sass/components/_benefit.scss */
+.Benefit__head {
+  text-align: center;
+  background: #AF0000;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+/* line 38, ../sass/components/_benefit.scss */
+.Benefit__head h4 {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+@media only screen and (max-width: 640px) {
+  /* line 44, ../sass/components/_benefit.scss */
+  .Benefit__head h4 {
+    font-size: 38px;
+  }
+}
+/* line 49, ../sass/components/_benefit.scss */
+.Benefit__body {
+  flex: 1 0 auto;
+  border: solid 1px #AF0000;
+  border-radius: 0 0 10px 10px;
+  align-items: stretch;
+  padding: 0 20px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 57, ../sass/components/_benefit.scss */
+.Benefit__body ul {
+  padding-left: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 49, ../sass/components/_benefit.scss */
+  .Benefit__body {
+    font-size: 34px;
+  }
+}
+/* line 64, ../sass/components/_benefit.scss */
+.Benefit__head2 {
+  flex: 1 0 auto;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: #AF0000;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+/* line 73, ../sass/components/_benefit.scss */
+.Benefit__head2 h4 {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+@media only screen and (max-width: 640px) {
+  /* line 64, ../sass/components/_benefit.scss */
+  .Benefit__head2 {
+    flex: 0 0 880px;
+  }
+  /* line 80, ../sass/components/_benefit.scss */
+  .Benefit__head2 h4 {
+    font-size: 38px;
+  }
+}
+/* line 85, ../sass/components/_benefit.scss */
+.Benefit__wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px;
+  border: solid 1px #AF0000;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 85, ../sass/components/_benefit.scss */
+  .Benefit__wrap {
+    flex-wrap: wrap;
+    flex: 0 0 880px;
+  }
+}
+/* line 97, ../sass/components/_benefit.scss */
+.Benefit__wrap2 {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+/* line 102, ../sass/components/_benefit.scss */
+.Benefit__wrap2:nth-child(3n) {
+  margin-right: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 97, ../sass/components/_benefit.scss */
+  .Benefit__wrap2 {
+    flex: 0 0 880px;
+    margin-bottom: 40px;
+  }
+}
+/* line 110, ../sass/components/_benefit.scss */
+.Benefit__title {
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+/* line 113, ../sass/components/_benefit.scss */
+.Benefit__title h5 {
+  font-size: 18px;
+  color: #AF0000;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 110, ../sass/components/_benefit.scss */
+  .Benefit__title {
+    margin-bottom: 0;
+  }
+  /* line 120, ../sass/components/_benefit.scss */
+  .Benefit__title h5 {
+    font-size: 38px;
+  }
+}
+/* line 125, ../sass/components/_benefit.scss */
+.Benefit__text {
+  flex: 1 1 auto;
+  border-top: dashed 1px #AF0000;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+/* line 130, ../sass/components/_benefit.scss */
+.Benefit__text p {
+  margin-top: 15px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 125, ../sass/components/_benefit.scss */
+  .Benefit__text {
+    font-size: 34px;
+    border-top: none;
+  }
+}
+/* line 138, ../sass/components/_benefit.scss */
+.Benefit__img {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+/* line 145, ../sass/components/_benefit.scss */
+.Benefit__img img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 640px) {
+  /* line 138, ../sass/components/_benefit.scss */
+  .Benefit__img {
+    border-bottom: dashed 1px #AF0000;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+  }
+  /* line 153, ../sass/components/_benefit.scss */
+  .Benefit__img img {
+    width: 830px;
+    height: auto;
+  }
+}
+
+/* line 3, ../sass/components/_company.scss */
+.Company {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 6, ../sass/components/_company.scss */
+.Company__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 10, ../sass/components/_company.scss */
+.Company__head {
+  display: flex;
+  flex: 0 0 295px;
+  align-self: stretch;
+  align-items: center;
+  background: #E2DFD0;
+  padding-left: 40px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 10, ../sass/components/_company.scss */
+  .Company__head {
+    flex: 0 0 290px;
+    font-size: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+/* line 26, ../sass/components/_company.scss */
+.Company__body {
+  display: flex;
+  flex: 0 0 660px;
+  background: #F7F4E8;
+  padding-left: 40px;
+  margin-bottom: 5px;
+}
+/* line 32, ../sass/components/_company.scss */
+.Company__body ul {
+  padding-left: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 26, ../sass/components/_company.scss */
+  .Company__body {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+/* line 3, ../sass/components/_interview.scss */
+.Interview {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 6, ../sass/components/_interview.scss */
+.Interview__main1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex: 1 0 100%;
+  background-image: url("../images/interview-d01.jpg");
+  height: 640px;
+}
+/* line 15, ../sass/components/_interview.scss */
+.Interview__main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex: 1 0 100%;
+  background-image: url("../images/interview-e01.jpg");
+  height: 640px;
+}
+/* line 24, ../sass/components/_interview.scss */
+.Interview__main3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex: 1 0 100%;
+  background-image: url("../images/interview-s01.jpg");
+  height: 640px;
+}
+/* line 33, ../sass/components/_interview.scss */
+.Interview__job {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 250px;
+  background: #AF0000;
+  width: 250px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-right: 40px;
+  padding: 20px 20px;
+}
+/* line 45, ../sass/components/_interview.scss */
+.Interview__job P {
+  font-size: 32px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 52, ../sass/components/_interview.scss */
+.Interview__topTitle {
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.7);
+  padding: 0 120px 0 90px;
+}
+/* line 56, ../sass/components/_interview.scss */
+.Interview__topTitle p {
+  font-size: 34px;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+/* line 62, ../sass/components/_interview.scss */
+.Interview__topTitle p:nth-of-type(1) {
+  margin-top: 40px;
+}
+/* line 65, ../sass/components/_interview.scss */
+.Interview__topTitle p:nth-of-type(2) {
+  margin-bottom: 40px;
+  text-align: right;
+}
+@media only screen and (max-width: 640px) {
+  /* line 71, ../sass/components/_interview.scss */
+  .Interview__topTitle p {
+    font-size: 38px;
+  }
+}
+/* line 76, ../sass/components/_interview.scss */
+.Interview__topTitle2 {
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.7);
+  padding: 0 200px 0 90px;
+}
+/* line 80, ../sass/components/_interview.scss */
+.Interview__topTitle2 p {
+  font-size: 34px;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+/* line 86, ../sass/components/_interview.scss */
+.Interview__topTitle2 p:nth-of-type(1) {
+  margin-top: 40px;
+}
+/* line 89, ../sass/components/_interview.scss */
+.Interview__topTitle2 p:nth-of-type(2) {
+  margin-bottom: 40px;
+  text-align: right;
+}
+@media only screen and (max-width: 640px) {
+  /* line 76, ../sass/components/_interview.scss */
+  .Interview__topTitle2 {
+    padding-right: 130px;
+  }
+  /* line 96, ../sass/components/_interview.scss */
+  .Interview__topTitle2 p {
+    font-size: 38px;
+  }
+}
+/* line 101, ../sass/components/_interview.scss */
+.Interview__topTitle3 {
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.7);
+  padding: 0 240px 0 90px;
+}
+/* line 105, ../sass/components/_interview.scss */
+.Interview__topTitle3 p {
+  font-size: 34px;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+/* line 111, ../sass/components/_interview.scss */
+.Interview__topTitle3 p:nth-of-type(1) {
+  margin-top: 40px;
+}
+/* line 114, ../sass/components/_interview.scss */
+.Interview__topTitle3 p:nth-of-type(2) {
+  margin-bottom: 40px;
+  text-align: right;
+}
+@media only screen and (max-width: 640px) {
+  /* line 101, ../sass/components/_interview.scss */
+  .Interview__topTitle3 {
+    padding-right: 130px;
+  }
+  /* line 121, ../sass/components/_interview.scss */
+  .Interview__topTitle3 p {
+    font-size: 38px;
+  }
+}
+/* line 126, ../sass/components/_interview.scss */
+.Interview__episode {
+  display: flex;
+  flex: 0 0 100%;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 126, ../sass/components/_interview.scss */
+  .Interview__episode {
+    margin-top: 40px;
+  }
+}
+/* line 134, ../sass/components/_interview.scss */
+.Interview__episodeNumber {
+  flex: 1 0 12%;
+  background: #AF0000;
+  color: #fff;
+  padding: 15px 15px;
+  text-align: center;
+}
+/* line 140, ../sass/components/_interview.scss */
+.Interview__episodeNumber p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+/* line 144, ../sass/components/_interview.scss */
+.Interview__episodeNumber p:nth-of-type(2) {
+  font-size: 62px;
+  margin: 0;
+  line-height: 1;
+}
+/* line 151, ../sass/components/_interview.scss */
+.Interview__episodeTitle {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  flex: 1 0 88%;
+  padding-left: 20px;
+  border: solid 1px #AF0000;
+}
+/* line 158, ../sass/components/_interview.scss */
+.Interview__episodeTitle p {
+  font-size: 28px;
+  line-height: 1;
+  margin-left: 20px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 164, ../sass/components/_interview.scss */
+  .Interview__episodeTitle p {
+    font-size: 38px;
+  }
+}
+/* line 169, ../sass/components/_interview.scss */
+.Interview__body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+/* line 174, ../sass/components/_interview.scss */
+.Interview__img {
+  width: 80%;
+}
+/* line 176, ../sass/components/_interview.scss */
+.Interview__img img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 640px) {
+  /* line 174, ../sass/components/_interview.scss */
+  .Interview__img {
+    width: 100%;
+  }
+}
+/* line 184, ../sass/components/_interview.scss */
+.Interview__text {
+  width: 95%;
+  background: #fff;
+  padding: 0 20px;
+  position: relative;
+  top: -60px;
+  left: 60px;
+  margin-bottom: -20px;
+}
+/* line 192, ../sass/components/_interview.scss */
+.Interview__text p {
+  line-height: 1.7;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+@media only screen and (max-width: 640px) {
+  /* line 184, ../sass/components/_interview.scss */
+  .Interview__text {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  /* line 201, ../sass/components/_interview.scss */
+  .Interview__text p {
+    font-size: 34px;
+  }
+}
+/* line 206, ../sass/components/_interview.scss */
+.Interview__img2 {
+  width: 80%;
+  position: relative;
+  left: 192px;
+}
+/* line 210, ../sass/components/_interview.scss */
+.Interview__img2 img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 640px) {
+  /* line 206, ../sass/components/_interview.scss */
+  .Interview__img2 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 219, ../sass/components/_interview.scss */
+.Interview__text2 {
+  width: 95%;
+  background: #fff;
+  padding: 0 20px;
+  position: relative;
+  top: -60px;
+  margin-bottom: -20px;
+}
+/* line 226, ../sass/components/_interview.scss */
+.Interview__text2 p {
+  line-height: 1.7;
+}
+@media only screen and (max-width: 640px) {
+  /* line 219, ../sass/components/_interview.scss */
+  .Interview__text2 {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  /* line 233, ../sass/components/_interview.scss */
+  .Interview__text2 p {
+    font-size: 34px;
+  }
+}
+
+/* line 3, ../sass/components/common/_header.scss */
+.Header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 3, ../sass/components/common/_header.scss */
+  .Header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+/* line 11, ../sass/components/common/_header.scss */
+.Header__main {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+/* line 16, ../sass/components/common/_header.scss */
+.Header__head {
+  flex: 1 0 750px;
+}
+/* line 18, ../sass/components/common/_header.scss */
+.Header__head h1 {
+  margin: 0;
+}
+/* line 22, ../sass/components/common/_header.scss */
+.Header__head a:hover {
+  opacity: 0.6;
+}
+/* line 25, ../sass/components/common/_header.scss */
+.Header__head a:active {
+  opacity: 0.6;
+}
+/* line 29, ../sass/components/common/_header.scss */
+.Header__head img {
+  width: 130px;
+  height: 90px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 29, ../sass/components/common/_header.scss */
+  .Header__head img {
+    width: 260px;
+    height: 180px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  /* line 16, ../sass/components/common/_header.scss */
+  .Header__head {
+    flex: 1 0 600px;
+  }
+}
+/* line 41, ../sass/components/common/_header.scss */
+.Header__body {
+  display: flex;
+  flex: 1 0 210px;
+  justify-content: center;
+  align-items: center;
+  background: #AF0000;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 15px 10px 10px;
+}
+/* line 50, ../sass/components/common/_header.scss */
+.Header__body:hover {
+  opacity: 0.8;
+}
+/* line 53, ../sass/components/common/_header.scss */
+.Header__body:active {
+  opacity: 0.8;
+}
+/* line 56, ../sass/components/common/_header.scss */
+.Header__body img {
+  margin-right: 10px;
+}
+/* line 59, ../sass/components/common/_header.scss */
+.Header__body p {
+  color: #fff;
+}
+@media only screen and (max-width: 640px) {
+  /* line 41, ../sass/components/common/_header.scss */
+  .Header__body {
+    flex: 1 0 360px;
+    font-size: 34px;
+  }
+}
+
+/* line 3, ../sass/components/common/_footer.scss */
+.Footer {
+  width: 980px;
+  margin-top: 20px;
+  background: #000;
+  padding: 40px 40px 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 10, ../sass/components/common/_footer.scss */
+.Footer__menu {
+  flex: 0 0 200px;
+  color: #fff;
+}
+/* line 13, ../sass/components/common/_footer.scss */
+.Footer__menu p {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 640px) {
+  /* line 10, ../sass/components/common/_footer.scss */
+  .Footer__menu {
+    font-size: 28px;
+    flex: 0 0 350px;
+  }
+}
+/* line 21, ../sass/components/common/_footer.scss */
+.Footer__foot {
+  flex: 0 0 880px;
+  color: #fff;
+  text-align: center;
+  align-self: stretch;
+  font-size: 14px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 21, ../sass/components/common/_footer.scss */
+  .Footer__foot {
+    font-size: 28px;
+  }
+}
+
+/* line 3, ../sass/components/common/_menu.scss */
+.Menu {
+  display: flex;
+}
+/* line 5, ../sass/components/common/_menu.scss */
+.Menu__item {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 20px;
+  background: #fff;
+  border-radius: 5px;
+  color: #000;
+}
+/* line 14, ../sass/components/common/_menu.scss */
+.Menu__item:hover {
+  color: #fff;
+  background: #AF0000;
+}
+/* line 18, ../sass/components/common/_menu.scss */
+.Menu__item:active {
+  color: #fff;
+  background: #AF0000;
+}
+@media only screen and (max-width: 640px) {
+  /* line 3, ../sass/components/common/_menu.scss */
+  .Menu {
+    display: none;
+  }
+}
+
+/* line 28, ../sass/components/common/_menu.scss */
+.Menu2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-top: 0;
+}
+/* line 33, ../sass/components/common/_menu.scss */
+.Menu2__item {
+  padding: 12px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+/* line 38, ../sass/components/common/_menu.scss */
+.Menu2__item:hover {
+  color: #AF0000;
+}
+/* line 41, ../sass/components/common/_menu.scss */
+.Menu2__item:active {
+  color: #AF0000;
+}
+@media only screen and (max-width: 640px) {
+  /* line 33, ../sass/components/common/_menu.scss */
+  .Menu2__item {
+    font-size: 24px;
+    padding: 22px 25px;
+  }
+}
+
+/* line 50, ../sass/components/common/_menu.scss */
+.Menu3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+/* line 54, ../sass/components/common/_menu.scss */
+.Menu3__item {
+  padding: 10px 15px;
+  margin-right: 20px;
+  font-size: 18px;
+  color: #000;
+  border: solid 1px #000;
+  border-radius: 10px;
+}
+/* line 61, ../sass/components/common/_menu.scss */
+.Menu3__item:hover {
+  color: #fff;
+  background: #AF0000;
+  border: solid 1px #AF0000;
+}
+/* line 66, ../sass/components/common/_menu.scss */
+.Menu3__item:active {
+  color: #fff;
+  background: #AF0000;
+  border: solid 1px #AF0000;
+}
+@media only screen and (max-width: 640px) {
+  /* line 54, ../sass/components/common/_menu.scss */
+  .Menu3__item {
+    font-size: 34px;
+    margin-top: 20px;
+    padding: 20px 25px;
+  }
+}
+
+/* line 3, ../sass/components/common/_contentsTitle.scss */
+.ContentsTitle {
+  flex: 1 0 100%;
+  text-align: center;
+  color: #fff;
+  background: #262626;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+/* line 10, ../sass/components/common/_contentsTitle.scss */
+.ContentsTitle h3 {
+  font-weight: normal;
+  font-size: 22px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 10, ../sass/components/common/_contentsTitle.scss */
+  .ContentsTitle h3 {
+    font-size: 38px;
+  }
+}
+/* line 17, ../sass/components/common/_contentsTitle.scss */
+.ContentsTitle__interview {
+  flex: 1 0 100%;
+  color: #fff;
+  background: #262626;
+  padding-left: 25px;
+  border-radius: 10px 10px 0 0;
+}
+/* line 23, ../sass/components/common/_contentsTitle.scss */
+.ContentsTitle__interview h3 {
+  font-weight: normal;
+  font-size: 32px;
+  margin: 30px 20px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 23, ../sass/components/common/_contentsTitle.scss */
+  .ContentsTitle__interview h3 {
+    font-size: 40px;
+  }
+}
+
+/* line 3, ../sass/components/parts/_layouts.scss */
+.l-box {
+  width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* line 8, ../sass/components/parts/_layouts.scss */
+.l-box2 {
+  width: 980px;
+  margin: 0 auto;
+}

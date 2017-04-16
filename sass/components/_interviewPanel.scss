@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+.InterviewPanel {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    &__half {
+        width: 470px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          opacity: 0.8;
+        }
+        &:nth-child(3n) {
+            margin-bottom: 0;
+        }
+    }
+    &__head {
+        background: $color-grey-deep;
+        color: $color-white;
+        font-size: 24px;
+        padding: 15px 10px 15px 25px;
+        p {
+            margin: 0;
+        }
+        @include mq-sp {
+            font-size: 34px;
+            padding: 20px 10px 20px 25px;
+        }
+    }
+    &__main__1 {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 470px;
+        align-items: flex-end;
+        background-image: url("../images/interview_thumb01.jpg");
+    }
+    &__main__2 {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 470px;
+        align-items: flex-end;
+        background-image: url("../images/interview_thumb02.jpg");
+    }
+    &__main__3 {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 470px;
+        align-items: flex-end;
+        background-image: url("../images/interview_thumb03.jpg");
+    }
+    &__sub {
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 65px;
+        background: $color-red;
+        width: 130px;
+        height: 130px;
+        padding: 10px;
+        border-radius: 50%;
+        text-align: center;
+        &__1 {
+            margin-top: 25px;
+            margin-bottom: 0;
+            color: $color-white;
+        }
+        &__2 {
+            margin-top: 5px;
+            color: $color-white;
+        }
+        @include mq-sp {
+            font-size: 24px;
+            width: 170px;
+            height: 170px;
+            margin-bottom: 29px;
+            &__1 {
+              margin-top: 30px;
+            }
+        }
+    }
+    &__body {
+        width: 470px;
+        height: 94px;
+        align-self: flex-start;
+        background-color: rgba(15, 15, 15, 0.7);
+        padding: 20px 25px 20px 25px;
+        font-size: 18px;
+        color: $color-white;
+        p {
+            margin: 0;
+        }
+        @include mq-sp {
+            font-size: 30px;
+            padding: 20px 25px 20px 25px;
+            height: 134px;
+        }
+    }
+}

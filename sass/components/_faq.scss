@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.Faq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__main {
+        flex: 0 0 98%;
+        display: flex;
+        align-items: center;
+        background: $color-red;
+        color: $color-white;
+        border-radius: 10px;
+        padding: 20px 40px;
+        margin-top: 10px;
+    }
+    &__Q {
+        font-size: 22px;
+        margin-right: 20px;
+        @include mq-sp {
+            font-size: 38px;
+        }
+    }
+    &__head {
+        p {
+            margin: 10px 0;
+        }
+        @include mq-sp {
+            p {
+                font-size: 34px;
+            }
+        }
+    }
+    &__sub {
+        flex: 0 0 98%;
+        display: flex;
+        align-items: flex-start;
+        border-radius: 10px;
+        padding: 20px 40px;
+        margin-bottom: 20px;
+    }
+    &__A {
+        margin-top: 10px;
+        font-size: 22px;
+        margin-right: 20px;
+        font-weight: bold;
+        @include mq-sp {
+            font-size: 38px;
+        }
+    }
+    &__body {
+        p {
+            margin: 10px 0;
+        }
+        @include mq-sp {
+            p {
+                font-size: 34px;
+            }
+        }
+    }
+}

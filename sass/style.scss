@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*
+  Theme Name:
+  Description: Crane&i
+  Author: Crane&i
+  Author URI:
+  Version: 1.0
+*/
+
+//---------------------------------------------------
+//base
+//---------------------------------------------------
+
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/reset";
+
+
+//---------------------------------------------------
+//conponents
+//---------------------------------------------------
+
+@import "./components/topHeader";
+@import "./components/interviewPanel";
+@import "./components/recruitPanel";
+@import "./components/contentsPanel";
+@import "./components/recruit";
+@import "./components/training";
+@import "./components/faq";
+@import "./components/benefit";
+@import "./components/company";
+@import "./components/interview";
+
+//common
+@import "./components/common/header";
+@import "./components/common/footer";
+@import "./components/common/menu";
+@import "./components/common/contentsTitle";
+
+//parts
+@import "./components/parts/layouts";

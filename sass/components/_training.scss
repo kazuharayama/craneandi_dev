@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+.Training {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__head {
+        flex: 0 0 100%;
+        margin-bottom: 40px;
+        padding: 0 20px;
+        p {
+            margin-top: 0;
+        }
+        @include mq-sp {
+            font-size: 34px;
+        }
+    }
+    &__title {
+        flex: 0 0 95%;
+        background: $color-red;
+        border-radius: 10px 10px 0 0;
+        padding: 20px 10px;
+        color: $color-white;
+        text-align: center;
+        margin-right: 40px;
+        margin-left: 40px;
+        h4 {
+            font-size: 20px;
+            margin: 0;
+            font-weight: normal;
+        }
+        @include mq-sp {
+            flex: 0 0 90%;
+            padding: 40px 10px;
+            h4 {
+                font-size: 38px;
+            }
+        }
+    }
+    &__body {
+        flex: 0 0 95%;
+        border: solid 1px $color-red;
+        margin-bottom: 60px;
+        margin-right: 40px;
+        margin-left: 40px;
+        border-radius: 0 0 10px 10px;
+        padding: 0 40px 20px 40px;
+        h5 {
+            font-size: 18px;
+            color: $color-red;
+            margin-bottom: 0;
+        }
+        
+        @include mq-sp {
+            flex: 0 0 90%;
+            padding: 0 60px 20px 60px;
+            h5 {
+                font-size: 34px;
+            }
+            p {
+                font-size: 34px;
+                margin-top: 10px;
+            }
+            ul {
+                margin-bottom: 40px;
+            }
+            li {
+                font-size: 34px;
+            }
+        }
+    }
+    &__img {
+        flex: 0 0 100%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+}

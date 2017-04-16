@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.Footer {
+    width: $base-content-width;
+    margin-top: 20px;
+    background: #000;
+    padding: 40px 40px 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    &__menu {
+        flex: 0 0 200px;
+        color: $color-white;
+        p {
+            margin-bottom: 0;
+        }
+        @include mq-sp {
+            font-size: 28px;
+            flex: 0 0 350px;
+        }
+    }
+    &__foot {
+        flex: 0 0 880px;
+        color: $color-white;
+        text-align: center;
+        align-self: stretch;
+        font-size: 14px;
+        @include mq-sp {
+            font-size: 28px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.Company {
+    display: flex;
+    flex-wrap: wrap;
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__head {
+        display: flex;
+        flex: 0 0 295px;
+        align-self: stretch;
+        align-items: center;
+        background: $color-beige;
+        padding-left: 40px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        @include mq-sp {
+            flex: 0 0 290px;
+            font-size: 30px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    &__body {
+        display: flex;
+        flex: 0 0 660px;
+        background: $color-beige-pale;
+        padding-left: 40px;
+        margin-bottom: 5px;
+        ul {
+            padding-left: 0;
+        }
+        @include mq-sp {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+    }
+}

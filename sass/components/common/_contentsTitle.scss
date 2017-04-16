@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.ContentsTitle {
+    flex: 1 0 100%;
+    text-align: center;
+    color: $color-white;
+    background: $color-grey-deep;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    h3 {
+        font-weight: normal;
+        font-size: 22px;
+        @include mq-sp {
+          font-size: 38px;
+        }
+    }
+    &__interview {
+        flex: 1 0 100%;
+        color: $color-white;
+        background: $color-grey-deep;
+        padding-left: 25px;
+        border-radius: 10px 10px 0 0;
+        h3 {
+            font-weight: normal;
+            font-size: 32px;
+            margin: 30px 20px;
+            @include mq-sp {
+                font-size: 40px;
+            }
+        }
+    }
+}
